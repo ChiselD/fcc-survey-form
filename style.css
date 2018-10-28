@@ -6,17 +6,9 @@ input:invalid {
   background-color: pink;
 }
 
-.question {
-  border: 1px solid blue;
-}
-
 #content {
   background-color: rgb(250,247,238);
   max-width: 30%;
   margin: 0 auto;
   padding: 40px 100px;
-}
-
-#form-content * {
-  margin: 6px 0;
 }
