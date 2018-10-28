@@ -8,46 +8,60 @@
   <body>
     <div id="content">
       <h1 id="title">Visitor Survey</h1>
-      <p id="description">Thanks for dropping by! Let me ask you some prying questions about yourself.</p>
+      <p id="description">Thanks for dropping by! Let me ask you some prying questions about yourself.</p><br/>
       <form id="survey-form" action="index.html" method="post">
         <div id="form-content">
-          <label id="name-label" for="name">
-            Name: <input id="name" type="text" name="name" placeholder="Your name" required><br/>
-          </label>
-          <label id="email-label" for="email">
-            Email: <input id="email" type="email" name="email" placeholder="Your email" required><br/>
-          </label>
-          <label id="number-label" for="number">
-            Number: <input id="number" type="number" name="number" value="Number" min="0" max="100" placeholder="Your number" required><br/>
-          </label>
-          <label for="language">
-            Select your native language:
-            <select id="dropdown" name="language">
-              <option value="dari">Dari</option>
-              <option value="malagasy">Malagasy</option>
-              <option value="quechua">Quechua</option>
-              <option value="swahili">Swahili</option>
-              <option value="other">Other</option>
-            </select>
-          </label><br/>
-          <label for="gender">
-            Select your gender:<br/>
-            <input type="radio" name="gender" value="female">Female<br/>
-            <input type="radio" name="gender" value="male">Male<br/>
-            <input type="radio" name="gender" value="other">Other
-          </label><br/>
-          <label for="pets">
-            What kind of pet/s do you have?<br/>
-            <input type="checkbox" name="pets" value="cat">Cat<br/>
-            <input type="checkbox" name="pets" value="dog">Dog<br/>
-            <input type="checkbox" name="pets" value="bird">Bird<br/>
-            <input type="checkbox" name="pets" value="fish">Fish<br/>
-            <input type="checkbox" name="pets" value="other">Other
-          </label><br/>
-          <label for="comments">
-            Any additional comments?<br/>
-            <textarea name="comments" form="survey-form"></textarea>
-          </label><br/>
+          <div class="question">
+            <label id="name-label" for="name">
+              Name: <input id="name" type="text" name="name" placeholder="Your name" required>
+            </label>
+          </div><br/>
+          <div class="question">
+            <label id="email-label" for="email">
+              Email: <input id="email" type="email" name="email" placeholder="Your email" required>
+            </label>
+          </div><br/>
+          <div class="question">
+            <label id="number-label" for="number">
+              Number: <input id="number" type="number" name="number" value="Number" min="0" max="100" placeholder="Your number" required>
+            </label>
+          </div><br/>
+          <div class="question">
+            <label for="language">
+              Select your native language:
+              <select id="dropdown" name="language">
+                <option value="dari">Dari</option>
+                <option value="malagasy">Malagasy</option>
+                <option value="quechua">Quechua</option>
+                <option value="swahili">Swahili</option>
+                <option value="other">Other</option>
+              </select>
+            </label>
+          </div><br/>
+          <div class="question">
+            <label for="gender">
+              Select your gender:<br/>
+              <input type="radio" name="gender" value="female">Female<br/>
+              <input type="radio" name="gender" value="male">Male<br/>
+              <input type="radio" name="gender" value="other">Other
+            </label>
+          </div><br/>
+          <div class="question">
+            <label for="pets">
+              What kind of pet/s do you have?<br/>
+              <input type="checkbox" name="pets" value="cat">Cat<br/>
+              <input type="checkbox" name="pets" value="dog">Dog<br/>
+              <input type="checkbox" name="pets" value="bird">Bird<br/>
+              <input type="checkbox" name="pets" value="fish">Fish<br/>
+              <input type="checkbox" name="pets" value="other">Other
+            </label>
+          </div><br/>
+          <div class="question">
+            <label for="comments">
+              Any additional comments?<br/>
+              <textarea name="comments" form="survey-form"></textarea>
+            </label>
+          </div><br/>
           <input id="submit" type="submit" name="submit" value="Submit">
         </div>
       </form>
