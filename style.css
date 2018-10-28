@@ -16,3 +16,12 @@ input:invalid {
   margin: 0 auto;
   padding: 40px 100px;
 }
+
+#number {
+  width: 60px;
+}
+
+#comments {
+  width: 240px;
+  height: 80px;
+}
